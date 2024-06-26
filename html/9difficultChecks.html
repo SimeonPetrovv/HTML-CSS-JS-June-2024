@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sevenToEleven.css">
+    <title>По-сложни проверки</title>
+</head>
+<body>
+<div class="container">
+    <h1>По-сложни проверки</h1>
+
+    <h3>Switch-case конструкция</h3>
+    <p>Използване на switch-case конструкция за проверка на различни стойности на променлива.</p>
+    <h4>Примерна задача:</h4>
+        <pre>
+            <code>
+                let day = 2;
+                switch (day) {
+                case 1:
+                console.log("Понеделник");
+                break;
+                case 2:
+                console.log("Вторник");
+                break;
+                case 3:
+                console.log("Сряда");
+                break;
+                default:
+                console.log("Друг ден");
+                }           
+            </code>
+        </pre>
+
+    <h3>Вложени проверки</h3>
+    <p>Използването на вложени if-else конструкции за проверка на условия в рамките на други условия.</p>
+    <h4>Примерна задача:</h4>
+        <pre>
+            <code>
+                let number = 15;
+                if (number > 0) {
+                    if (number % 2 === 0) {
+                    console.log("Числото е положително и четно.");
+                    } else {
+                    console.log("Числото е положително и нечетно.");
+                    }
+                } else if (number < 0) {
+                console.log("Числото е отрицателно.");
+                } else {
+                console.log("Числото е нула.");
+                }
+            </code>
+        </pre>
+
+    <h3>Логически опратори: и, или, отрицание</h3>
+    <p>Използването на логически оператори (&&, ||, !) за създаване на сложни условия.</p>
+    <h4>Примерна задача:</h4>
+    <pre><code>let age = 25;
+let isMember = true;
+
+if (age >= 18 && isMember) {
+    console.log("Достъп разрешен.");
+} else {
+    console.log("Достъп забранен.");
+}</code></pre>
+</div>
+</body>
+</html>

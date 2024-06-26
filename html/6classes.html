@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="classes.css">
+    <script src="classes.js"></script>
+    <title>Темите от курса</title>
+</head>
+<body>
+
+    <header>
+        <a href="2main.html"> <div class="logo">JavaScript <br> Самоучител</div> </a>
+        <nav>
+            <ul>
+                <li><a href="#top" target="_self">Начало</a></li>
+                <li>
+                    <a href="6classes.html" target="_blank">Уроци</a>
+                    <div class="dropdown-content">
+                        <a href="7firsrtSteps.html">Първи стъпки в JavaScript</a>
+                        <a href="8checks.html">Проверки</a>
+                        <a href="9difficultChecks.html">По-сложни проверки</a>
+                        <a href="10forLoops.html">For-цикъл</a>
+                        <a href="11whileLoops.html">While-цикъл</a>
+                    </div>
+                </li>
+                <li><a href="#" target="_blank">Упражнения</a>
+                    <div class="dropdown-content">
+                        <a href="12homeworkFirstSteps.html"> Упражнение 1</a>
+                        <a href="13homeworkChecks.html"> Упражнение 2</a>
+                        <a href="14homeworkDiffChecks.html"> Упражнение 3</a>
+                        <a href="15homeworkForLoops.html"> Упражнение 4</a>
+                        <a href="16homeworkWhileLoops.html"> Упражнение 5</a>
+                    </div>
+                </li>
+                <!-- <li><a href="#" target="_blank">За мен</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <h3 id="top"> Полезна информация </h3>
+        <ol>
+            <li>За започване на учението е нужно да инсталирате Visual Studio Code + Node.js</li> <br>
+            <li>Ще работим основно с конзола в Basics</li> <br>
+            <li>Ще имате възможност да упражнявате задачите в сектор "Упражнения"</li> <br>
+            <li>Задачите на упражненията се намират в "условие" </li> <br>
+            <li>Кода ви трябва да е добре подреден!</li> <br>
+            <li> <text style=color:red> Ще имате подробен пример в първото упражнение!</text></li> <br>
+
+        </ul>
+
+    <div class="container">
+        <fieldset>
+            <legend>JavaScript Basics</legend>
+            <div class="grid">
+                <div>
+                    <button class="toggle-btn" onclick="toggleContent('content1')">Първи стъпки в JavaScript ➕</button>
+                    <div id="content1" class="content">
+                        <article class="exercise">  
+                            <section class="short-description"> 
+                                <p id="firstClasses"> Първи стъпки в JavaScript</p>
+                                <ul>
+                                    <li>Как работи JavaScript?</li>
+                                    <li>Променливи;</li>
+                                    <li>Типове данни;</li>
+                                    <li>Вход/изход на конзолата;</li>
+                                    <li>Прости операции и пресмятания.</li>
+                                </ul>
+                            </section>
+                        </article>
+
+                        <article class="link">
+                            <section class="link-description">
+                                <p> Линкове </p>
+                                <a href="7firsrtSteps.html">Въведение</a>
+                                <a href="12homeworkFirstSteps.html">Упражнение</a>
+                            </section>
+                        </article>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="toggle-btn" onclick="toggleContent('content2')">Проверки ➕</button>
+                    <div id="content2" class="content">
+                        <article class="exercise">  
+                            <section class="short-description"> 
+                                <p id="secondClasses"> Проверки </p>
+                                <ul>
+                                    <li>Оператори за сравнение;</li>
+                                    <li>Булева променлива;</li>
+                                    <li>Прости логически проверки;</li>
+                                    <li>Серия от проверки;</li>
+                                    <li>Закръгляне и форматиране;</li>
+                                    <li>Живот на променлива;</li>
+                                    <li>Дебъгване.</li>
+                                </ul>
+                            </section>
+                        </article>
+
+                        <article class="link">
+                            <section class="link-description">
+                                <p> Линкове </p>
+                                <a href="8checks.html">Въведение</a>
+                                <a href="13homeworkChecks.html">Упражнение</a>
+                            </section>
+                        </article>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="toggle-btn" onclick="toggleContent('content3')">По-сложни проверки ➕</button>
+                    <div id="content3" class="content">
+                        <article class="exercise">  
+                            <section class="short-description"> 
+                                <p id="thirdClasses"> По-сложни проверки </p>
+                                <ul>
+                                    <li>Switch-case конструкция;</li>
+                                    <li>Вложени проверки;</li>
+                                    <li>Логически опратори: и, или, отрицание.</li>
+                                </ul>
+                            </section>
+                        </article>
+
+                        <article class="link">
+                            <section class="link-description">
+                                <p> Линкове </п>
+                                <a href="9difficultChecks.html">Въведение</a>
+                                <a href="14homeworkDiffChecks.html">Упражнение</a>
+                            </section>
+                        </article>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="toggle-btn" onclick="toggleContent('content4')">For-цикъл ➕</button>
+                    <div id="content4" class="content">
+                        <article class="exercise">  
+                            <section class="short-description"> 
+                                <p id="fourthClasses"> For-цикъл</p>
+                                <ul>
+                                    <li>Инкрементация и декрементация;</li>
+                                    <li>Прости цикли;</li>
+                                    <li>Вложени цикли;</li>
+                                    <li>Цикли с масиви;</li>
+                                    <li>Цикли с обекти;</li>
+                                    <li>Цикли със символни низове.</li>
+                                </ul>
+                            </section>
+                        </article>
+
+                        <article class="link">
+                            <section class="link-description">
+                                <p> Линкове </п>
+                                    <a href="10forLoops.html">Въведение</a>
+                                    <a href="15homeworkForLoops.html">Упражнение</a>
+                            </section>
+                        </article>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="toggle-btn" onclick="toggleContent('content5')">While-цикъл ➕</button>
+                    <div id="content5" class="content">
+                        <article class="exercise">  
+                            <section class="short-description"> 
+                                <p id="fifthClasses"> While-цикъл</п>
+                                <ul>
+                                    <li>Основни принципи на while цикъл;</li>
+                                    <li>Do-while цикъл;</li>
+                                    <li>Промяна на променлива в цикъл.</li>
+                                </ул>
+                            </section>
+                        </article>
+
+                        <article class="link">
+                            <section class="link-description">
+                                <p> Линкове </p>
+                                <a href="11whileLoops.html">Въведение</a>
+                                <a href="16homeworkWhileLoops.html">Упражнение</a>
+                            </section>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <footer id="footer" class="hidden">
+        <div align="center">
+            <span>Създал: Симеон Петров <br>&copy;2024 </span>
+        </div>
+    </footer>
+</body>
+</html>
+

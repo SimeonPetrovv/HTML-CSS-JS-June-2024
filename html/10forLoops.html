@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sevenToEleven.css">
+    <title>For-цикъл</title>
+</head>
+<body>
+    <div class="container">
+    <h1>For-цикъл</h1>
+
+    <h3>Инкрементация и декрементация</h3>
+    <p>Използването на операторите ++ и -- за увеличаване или намаляване на стойността на променлива.</p>
+    <h4>Примерна задача:</h4>
+    <pre><code>for (let i = 0; i < 5; i++) {
+    console.log("Стойност на i: " + i);
+}</code></pre>
+
+    <h3>Прости цикли</h3>
+    <p>Използването на for цикъл за повторение на код определен брой пъти.</p>
+    <h4>Примерна задача:</h4>
+    <pre><code>for (let i = 0; i <= 3; i++) {
+    console.log("Брой: " + i);
+}</code></pre>
+
+    <h3>Вложени цикли</h3>
+    <p>Използването на цикли вътре в други цикли за обхождане на многомерни данни.</p>
+    <h4>Примерна задача:</h4>
+    <pre><code>for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 2; j++) {
+        console.log("i = " + i + ", j = " + j);
+    }
+}</code></pre>
+
+    <h3>Цикли с масиви</h3>
+    <p>Използването на for цикъл за обхождане на всички елементи на масив.</p>
+    <h4>Примерна задача:</h4>
+    <pre><code>let colors = ["Red", "Green", "Blue"];
+for (let i = 0; i < colors.length; i++) {
+    console.log(colors[i]);
+}</code></pre>
+
+    <h3>Цикли с обекти</h3>
+    <p>Използването на for-in цикъл за обхождане на свойствата на обект.</p>
+    <h4>Примерна задача:</h4>
+    <pre><code>let person = {
+    name: "John",
+    age: 30,
+    city: "New York"
+};
+
+for (let key in person) {
+    console.log(key + ": " + person[key]);
+}</code></pre>
+
+    <h3>Цикли със символни низове</h3>
+    <p>Използването на for цикъл за обхождане на символите в низ.</p>
+    <h4>Примерна задача:</h4>
+    <pre><code>let str = "Hello";
+for (let i = 0; i < str.length; i++) {
+    console.log(str[i]);
+}</code></pre>
+    </div>
+</body>
+</html>

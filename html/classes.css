@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding-top: 100px;
+}
+
+.container {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+legend {
+    font-size: 1.5em;
+    color: #333;
+    padding: 0 10px;
+}
+
+/* Стил за бутоните */
+.toggle-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #555;
+}
+
+/* Скриване на съдържанието по подразбиране */
+.content {
+    display: none;
+    margin-top: 10px;
+}
+
+.short-description ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.short-description ul li {
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.link-description a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.link-description a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.hidden {
+    display: none;
+}

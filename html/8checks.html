@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sevenToEleven.css">
+    <title>Проверки</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Проверки</h1>
+
+    <h3>Оператори за сравнение</h3>
+    <p>Операторите за сравнение се използват за сравнение на стойности и връщат булева стойност (true или false).</p>
+    <h4>Примерна задача:</h4>
+    <pre><code>let x = 10;
+let y = 20;
+console.log(x < y); // true
+console.log(x > y); // false
+console.log(x == y); // false</code></pre>
+
+    <h3>Булева променлива</h3>
+    <p>Булевите променливи могат да приемат само две стойности: true или false.</p>
+    <h4>Примерна задача:</h4>
+    <pre><code>let isJavaScriptFun = true;
+console.log(isJavaScriptFun); // true</code></pre>
+
+    <h3>Прости логически проверки</h3>
+    <p>Използването на if-else условни конструкции за изпълнение на различни блокове от код в зависимост от логическо условие.</p>
+    <h4>Примерна задача:</h4>
+    <pre><code>let number = 15;
+if (number > 10) {
+    console.log("Числото е по-голямо от 10.");
+} else {
+    console.log("Числото е по-малко или равно на 10.");
+}</code></pre>
+
+    <h3>Серия от проверки</h3>
+    <p>Използването на множество if-else if-else конструкции за проверка на различни условия.</p>
+    <h4>Примерна задача:</h4>
+    <pre><code>let number = 0;
+if (number > 0) {
+    console.log("Числото е положително.");
+} else if (number < 0) {
+    console.log("Числото е отрицателно.");
+} else {
+    console.log("Числото е нула.");
+}</code></pre>
+
+    <h3>Закръгляне и форматиране</h3>
+    <p>Използването на вградени методи за закръгляне на числа.</p>
+    <h4>Примерна задача:</h4>
+    <pre><code>let num = 4.7;
+let roundedNum = Math.round(num);
+console.log(roundedNum); // 5</code></pre>
+
+    <h3>Живот на променлива</h3>
+    <p>Разликата между локални и глобални променливи и обхвата им.</p>
+    <h4>Примерна задача:</h4>
+    <pre><code>let globalVar = "Глобална променлива";
+
+function myFunction() {
+    let localVar = "Локална променлива";
+    console.log(globalVar); // Глобална променлива
+    console.log(localVar); // Локална променлива
+}
+
+myFunction();
+console.log(globalVar); // Глобална променлива
+console.log(localVar); // Грешка: localVar is not defined</code></pre>
+
+    <h3>Дебъгване</h3>
+    <p>Използване на console.log и други инструменти за дебъгване на JavaScript код.</p>
+    <h4>Примерна задача:</h4>
+    <pre><code>let x = 5;
+console.log("Стойност преди промяна: " + x);
+x = 10;
+console.log("Стойност след промяна: " + x);</code></pre>
+</div>
+</body>
+</html>

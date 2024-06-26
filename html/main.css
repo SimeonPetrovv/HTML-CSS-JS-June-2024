@@ -1,0 +1,83 @@
+body {
+    background-image: url('home.png'); 
+    background-repeat: no-repeat; /* Да не се повтаря снимката */
+    background-size: cover; /* Покрива целия елемент */
+    color: #fff; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Стилен и четлив шрифт */
+    line-height: 1.6; /* Добавя разстояние между редовете за по-добра четимост */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Текстова сянка за по-добра четимост */
+    padding: 20px; 
+    padding-bottom: 100px;
+}
+
+.rectangle {
+    width: 800px;
+    height: 150px;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачен фон за по-добра четимост на текста */
+    border-radius: 10px; /* Закръгляне на ъглите*/
+    margin-bottom: 20px; /* Разстояние под правоъгълника */
+    padding-top: 50px;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+
+#console-text, #animated-text {
+    font-size: 2.5rem;
+    color: #fff; /* Бял цвят за текста */
+    margin: 20px;
+    text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black; /* Текстова сянка за по-добра четимост */
+}
+
+#animated-text {
+    opacity: 0;
+    transform: translateY(100%);
+    animation: fadeInSlideUp 3s ease-in-out forwards;
+}
+
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 3rem; 
+    margin-bottom: 20px; 
+}
+
+h3 {
+    font-size: 2rem; 
+    margin-top: 20px; /* Разстояние над подзаглавието */
+    margin-bottom: 10px; /* Разстояние под подзаглавието */
+}
+
+p, ol, li {
+    color: #fff; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Текстова сянка за по-добра четимост */
+}
+
+ol {
+    padding-left: 20px; 
+}
+
+li {
+    margin-bottom: 10px; 
+}

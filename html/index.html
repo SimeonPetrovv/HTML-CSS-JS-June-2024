@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход към JavaScript самоучител</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('login.png'); 
+            background-repeat: no-repeat; 
+            background-size: cover;
+        }
+        .login-container {
+            max-width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .login-input {
+            width: 91%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Вход</h2>
+        <form id="loginForm">
+            <input type="text" class="login-input" name="username" placeholder="Потребителско име" required>
+            <button type="submit" class="login-button">Достъп</button> 
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.querySelector('input[name="username"]').value;
+            localStorage.setItem('username', username);
+            window.location.href = '2main.html';
+        });
+    </script>
+</body>
+</html>
+
+
+
+    <!-- <fieldset>
+        <form class="login-form" action="/login" method="post">
+            <input type="text" name="username" placeholder="Потребителско име" required>
+            <button type="submit"> <a href="index.html">   Вход </a></button>
+        </form>
+    </fieldset> -->

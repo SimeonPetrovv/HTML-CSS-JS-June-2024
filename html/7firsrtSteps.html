@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sevenToEleven.css">
+    <title>Първи стъпки в JavaScript</title>
+</head>
+<body>
+<div class="container">
+    <h1>Първи стъпки в JavaScript</h1>
+    
+    <h3>Как работи JavaScript?</h3>
+    <p>JavaScript е език за програмиране, използван за създаване на динамични и интерактивни уеб страници. 
+        Той се изпълнява на страната на клиента (в браузъра) и може да манипулира съдържанието на HTML страниците в реално време.</p>
+    <h4>Примерна задача:</h4>
+        <pre>
+            <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;body&gt;
+
+                &lt;p id="demo"&gt;Този текст ще бъде променен.&lt;/p&gt;
+
+                &lt;script&gt;
+                document.getElementById("demo").innerHTML = "Hello, World!";
+                &lt;/script&gt;
+
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+
+    <h3>Променливи</h3>
+    <p>Променливите в JavaScript се използват за съхранение на данни, които могат да бъдат използвани и манипулирани по-късно в програмата.</p>
+    <h4>Примерна задача:</h4>
+        <pre>
+            <code>
+                let x = 5;
+                let y = 10;
+                console.log(x + y); // Резултат: 15
+            </code>
+        </pre>
+
+    <h3>Типове данни</h3>
+    <p>JavaScript поддържа различни типове данни като числа, низове (текст), булеви стойности и др.</p>
+    <h4>Примерна задача:</h4>
+        <pre>
+            <code>
+                let name = "John";
+                let age = 25;
+                console.log("Name: " + name + ", Age: " + age);
+            </code>
+        </pre>
+
+    <h3>Вход/изход на конзолата</h3>
+    <p>JavaScript може да приема вход от потребителя и да отпечатва изход в <text style="color: red;"> конзолата. </text></p>
+        <pre>
+            <code>
+                function () {
+                    console.log("Hello, World");
+                }
+
+                function()
+            </code>
+        </pre>
+
+    <h4>Примерна задача:</h4>
+        <pre>
+            <code>
+                let userName = prompt("Как се казвате?");
+                console.log("Здравей, " + userName + "!");
+            </code>
+        </pre>
+
+    <h3>Прости операции и пресмятания</h3>
+    <p>JavaScript поддържа основни аритметични операции като събиране, изваждане, умножение и деление.</p>
+    <h4>Примерна задача:</h4>
+    <pre><code>
+        let a = 8;
+        let b = 4;
+        console.log("Събиране: " + (a + b)); // 12
+        console.log("Изваждане: " + (a - b)); // 4
+        console.log("Умножение: " + (a * b)); // 32
+        console.log("Деление: " + (a / b)); // 2
+    </code>
+</pre>
+
+</div>
+</body>
+</html>
